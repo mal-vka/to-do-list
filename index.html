@@ -7,22 +7,39 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <form class="js-form">
-        <input class="js-newTask">
-        <button>Dodaj zadanie</button>
-    </form>
+    <div class="container">
+        
+        <header>
+            <h1 class="header">
+                Lista zadań
+            </h1>
+        </header>
+        
+        <section class="section">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <div class="section__body">
+                <form class="form js-form">
+                    <input class="form__input js-newTask" placeholder="Co jest do zrobienia?">
+                    <button class="form__button">Dodaj zadanie</button>
+                </form>
+            </div>
+        </section>
 
-    <ul class="js-tasks">
+        <section class="section">
+            <h2 class="section__header">Lista zadań</h2>
+                <div class="section__body">
+                <ul class="list js-list">    
+                    
+                </ul>
+            </div>
+        </section>
 
-    </ul>
+    </div>
 </body>
 </html>

@@ -7,7 +7,116 @@ html {
 }
 
 body {
-    /* font-family: 'Dosis', sans-serif;     */
-    /* font-family: 'Karla', sans-serif; */
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #eee;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;  
+    margin: 0 auto;       
+}
+
+.header {
+    margin: 0;
+    font-weight: 600;
+}
+
+.section {
+    background-color: white;        
+    margin: 10px 0;
+    box-shadow: 1px 1px 5px #ddd;
+}
+
+.section__header {
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+    margin: 0;
+}
+
+.section__body {
+    padding: 15px;
+}
+
+.form {    
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 15px;
+}
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form__button {
+    background-color: hsl(180, 100%, 25%);
+    color: white;
+    border: none;
+    padding: 10px;    
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%)
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 35%)
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 15px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list__content--done {
+    text-decoration: line-through;
+}
+
+.list__button {
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.list__button--toggleDone {
+    background-color: hsl(120, 100%, 25%);
+}
+
+.list__button--toggleDone:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+.list__button--toggleDone:active {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.list__button--remove {
+    background-color: hsl(0, 68%, 42%);
+}
+
+.list__button--remove {
+    background-color: hsl(0, 68%, 47%);
+}
+
+.list__button--remove {
+    background-color: hsl(0, 68%, 52%);
 }
