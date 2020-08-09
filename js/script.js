@@ -58,7 +58,7 @@
                     </button>     
                 </li>
             `;
-        }
+        };
         
         document.querySelector(".js-list").innerHTML = tasksListHTMLContent;    
         
@@ -77,7 +77,7 @@
             newTaskElement.value = "";
         }  
         
-        newTaskElementContent.focus();
+        newTaskElement.focus();
     };
 
     const init = () => {
