@@ -1,8 +1,9 @@
-.form {    
+.form {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 15px;
 }
+
 @media (max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
@@ -18,13 +19,13 @@
     background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
-    padding: 10px;    
+    padding: 10px;
 }
 
 .form__button:hover {
     background-color: hsl(180, 100%, 30%)
 }
 
-.form__button:hover {
+.form__button:active {
     background-color: hsl(180, 100%, 35%)
 }
