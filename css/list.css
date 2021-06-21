@@ -13,6 +13,10 @@
     border-bottom: 1px solid #ddd;
 }
 
+.list__content {
+    word-break: break-word;
+}
+
 .list__content--done {
     text-decoration: line-through;
 }
@@ -41,10 +45,10 @@
     background-color: hsl(0, 68%, 42%);
 }
 
-.list__button--remove {
+.list__button--remove:hover {
     background-color: hsl(0, 68%, 47%);
 }
 
-.list__button--remove {
+.list__button--remove:active {
     background-color: hsl(0, 68%, 52%);
 }

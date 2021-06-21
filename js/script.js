@@ -3,34 +3,34 @@
 
     const addNewTask = (newTaskContent) => {
         list.push({
-            content: newTaskContent,            
+            content: newTaskContent,
         });
-        render();
+        display();
     };
 
     const removeTask = (taskIndex) => {
         list.splice(taskIndex, 1);
-        render();
+        display();
     };
 
     const toggleTaskDone = (taskIndex) => {
         list[taskIndex].done = !list[taskIndex].done;
-        render();
+        display();
     };
 
     const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
-        
+
         removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
                 removeTask(taskIndex);
             });
-        });        
+        });
     };
 
     const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
-        
+
         toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(taskIndex);
@@ -38,7 +38,7 @@
         });
     };
 
-    const render = () => {
+    const display = () => {
         let tasksListHTMLContent = "";
 
         for (const task of list) {
@@ -49,7 +49,7 @@
                         ${task.done ? "✔" : ""}
                     </button>
 
-                    <span class="list__content${ task.done ? " list__content--done" : ""}">
+                    <span class="list__content${task.done ? " list__content--done" : ""}">
                         ${task.content}
                     </span>
 
@@ -59,9 +59,9 @@
                 </li>
             `;
         };
-        
-        document.querySelector(".js-list").innerHTML = tasksListHTMLContent;    
-        
+
+        document.querySelector(".js-list").innerHTML = tasksListHTMLContent;
+
         bindRemoveEvents();
         bindToggleDoneEvents();
     };
@@ -71,17 +71,17 @@
 
         const newTaskElement = document.querySelector(".js-newTask");
         const newTaskContent = newTaskElement.value.trim();
-        
+
         if (newTaskContent !== "") {
             addNewTask(newTaskContent);
             newTaskElement.value = "";
-        }  
-        
+        }
+
         newTaskElement.focus();
     };
 
     const init = () => {
-        render();
+        display();
 
         const form = document.querySelector(".js-form");
 
