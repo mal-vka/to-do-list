@@ -1,20 +1,29 @@
 {
-    const tasks = [];
+    let tasks = [{ content: "podlać rośliny" }, { content: "zrobić zakupy na bazarze" }, { content: "kupić prezent na urodziny siostry" }, { content: "iść na jogę" }];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
         display();
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            ...tasks.slice(taskIndex + 1)
+        ];
         display();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            { ...tasks[taskIndex], done: !tasks[taskIndex].done },
+            ...tasks.slice(taskIndex + 1)
+        ];
+        // lub: tasks = tasks.map((task, index) => (index === taskIndex ? { ...task, done: !task.done } : task));
         display();
     };
 
