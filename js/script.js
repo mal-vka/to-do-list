@@ -1,20 +1,20 @@
 {
-    const list = [];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        list.push({
+        tasks.push({
             content: newTaskContent,
         });
         display();
     };
 
     const removeTask = (taskIndex) => {
-        list.splice(taskIndex, 1);
+        tasks.splice(taskIndex, 1);
         display();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        list[taskIndex].done = !list[taskIndex].done;
+        tasks[taskIndex].done = !tasks[taskIndex].done;
         display();
     };
 
@@ -41,7 +41,7 @@
     const display = () => {
         let tasksListHTMLContent = "";
 
-        for (const task of list) {
+        for (const task of tasks) {
             tasksListHTMLContent += `
                 <li class="list__item js-task">
 
