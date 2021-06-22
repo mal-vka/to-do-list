@@ -1,10 +1,10 @@
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 540px) {
     .form {
         grid-template-columns: 1fr;
     }
