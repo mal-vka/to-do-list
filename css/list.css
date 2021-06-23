@@ -2,17 +2,15 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
-    /* justify-content: center; */
 }
 
 @media (max-width: 540px) {
     .buttons {
         grid-template-columns: auto;
-        margin: 25px 0 10px;
     }
 }
 
-.button {
+.buttons__button {
     border: none;
     background: none;
     color: teal;
@@ -21,8 +19,12 @@
     transition: 0.5s linear;
 }
 
-.button:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 35%);
+}
+
+.buttons__button:disabled {
+    color: #ccc;
 }
 
 .list {

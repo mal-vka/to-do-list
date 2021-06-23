@@ -11,11 +11,13 @@
     display: grid;
     grid-template-columns: 1fr auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 @media (max-width: 540px) {
     .section__header {
         grid-template-columns: 1fr;
+        grid-gap: 25px;
     }
 }
 
