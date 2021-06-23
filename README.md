@@ -7,10 +7,9 @@ https://mal-vka.github.io/to-do-list/
 This is a simple to-do-list which allows you to add, mark and remove your daily tasks.
 It is made for educational purposes as a second JS's project and further HTML&CSS training.
 To build this simple website, I used:
-- `if` statements, `for` loops and `.forEach` method, function structures in block with `init` function, `addEventListener` method, the possibilities offered by the `<form>` element - to add simple functionalities of operation on arrays which is the main logic of the site;
-- ES6 features;
+- ES6 features with immutability concept;
 - the semantic HTML and the BEM methodology - for clear and structured references;
-- cdn normalize;
+- cdn normalize and CSS (grid, basic transitions, media queries);
 - OpenGraph tags.
 
 ## preview
