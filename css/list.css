@@ -1,3 +1,13 @@
+.buttons {
+    display: inline-block;
+}
+
+.button {
+    border: none;
+    background: none;
+    font-size: 16px
+}
+
 .list {
     list-style: none;
     padding: 0;
@@ -11,6 +21,10 @@
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+}
+
+.list__item--hidden {
+    display: none;
 }
 
 .list__content {
