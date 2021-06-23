@@ -1,11 +1,28 @@
 .buttons {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    /* justify-content: center; */
+}
+
+@media (max-width: 540px) {
+    .buttons {
+        grid-template-columns: auto;
+        margin: 25px 0 10px;
+    }
 }
 
 .button {
     border: none;
     background: none;
-    font-size: 16px
+    color: teal;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.button:hover {
+    color: hsl(180, 100%, 35%);
 }
 
 .list {
@@ -41,6 +58,8 @@
     width: 30px;
     height: 30px;
     padding: 0;
+    cursor: pointer;
+    transition: 0.5s linear;
 }
 
 .list__button--toggleDone {
@@ -48,11 +67,11 @@
 }
 
 .list__button--toggleDone:hover {
-    background-color: hsl(120, 100%, 30%);
+    background-color: hsl(120, 100%, 35%);
 }
 
 .list__button--toggleDone:active {
-    background-color: hsl(120, 100%, 35%);
+    background-color: hsl(120, 100%, 40%);
 }
 
 .list__button--remove {
@@ -60,9 +79,9 @@
 }
 
 .list__button--remove:hover {
-    background-color: hsl(0, 68%, 47%);
+    background-color: hsl(0, 68%, 52%);
 }
 
 .list__button--remove:active {
-    background-color: hsl(0, 68%, 52%);
+    background-color: hsl(0, 68%, 57%);
 }

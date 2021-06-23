@@ -20,12 +20,15 @@
     color: white;
     border: none;
     padding: 10px;
+    cursor: pointer;
+    transition: 0.5s linear;
 }
 
 .form__button:hover {
-    background-color: hsl(180, 100%, 30%)
+    background-color: hsl(180, 100%, 35%);
 }
 
 .form__button:active {
-    background-color: hsl(180, 100%, 35%)
+    background-color: hsl(180, 100%, 40%);
+    transform: scale(1.1);
 }
