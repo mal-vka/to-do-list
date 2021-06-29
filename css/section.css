@@ -10,8 +10,6 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr auto;
-    justify-content: space-between;
-    align-items: center;
 }
 
 @media (max-width: 540px) {
